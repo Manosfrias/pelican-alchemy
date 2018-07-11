@@ -1,0 +1,14 @@
+<div class="row">
+  {% if SITEIMAGE %}
+  <div class="col-md-1">
+    <a href="{{ SITEURL }}/">
+      <img class="img-fluid" src={{ SITEURL }}{{ SITEIMAGE }} alt="{{ SITENAME }}">
+    </a>
+  </div>
+  {% endif %}
+ <ul class="list-inline col-md-4 offset-md-7">
+    <li class="list-inline-item"><a href="{{ SITEURL }}/archivos.html">Archivos</a></li>
+    <li class="list-inline-item"><a href="{{ SITEURL }}/categorias.html">Categorías</a></li>
+    <li class="list-inline-item"><a href="{{ SITEURL }}/hazte-socio.html">¡Hazte socio!</a></li>
+  </ul>
+</div>

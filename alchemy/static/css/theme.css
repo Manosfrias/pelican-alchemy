@@ -14,9 +14,10 @@ a {
 
 .main a {
   position: relative;
+  transition: opacity .4s linear;
 
 }
-.main a::before {
+.main header a::before {
   transition: all .4s linear;
   width: 0%;
   height: 2px;
@@ -27,11 +28,11 @@ a {
 }
 .main a:hover,
 .main a:focus {
-    color: #333;
-    text-decoration: none;
+  color: #333;
+  text-decoration: none;
   opacity: .6
 }
-.main a:hover::before{
+.main header a:hover::before{
   width: 100%
 }
 blockquote {
@@ -40,9 +41,30 @@ blockquote {
 }
 
 hr {
-  margin: 1.5rem 0;
+  margin: 0 0 1.5rem;
 }
 
+h1 {
+  margin-bottom: 0px
+}
+
+.h2, h2 {
+    font-size: 1.5rem;
+}
+#unete {
+  padding-top: 25px;
+  text-align: center;
+  font-size: 3em;
+}
+#unete + hr + p{
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 5px
+}
+#unete + hr + p + p{
+  text-align: center;
+  font-size: 1.5em;
+}
 /* ------------------------------------------------------------------------- */
 
 .container {
@@ -186,6 +208,10 @@ header {
   background: #fff;
   transition: all .4s linear
 }
+header .title a:hover {
+  color: #333;
+  text-decoration: none
+}
 header .container {
   position: relative;
 }
@@ -219,6 +245,7 @@ header .row ul {
   justify-content: space-between;
   text-transform: uppercase;
   font-size: 1rem;
+  width: 100%
 }
 header.minimize.header .rrss {
   top: -15px;
@@ -245,4 +272,17 @@ header .navegacion a:hover {
   color: #000;
   opacity: 0.8;
   text-decoration: none;
+}
+thead {
+  text-transform: uppercase;
+  font-size: .9rem;
+}
+td {
+  min-width: 150px
+}
+blockquote p{
+  text-align: center
+}
+blockquote p a:not(:last-child){
+  margin-right: 15px
 }
